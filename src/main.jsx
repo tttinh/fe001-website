@@ -4,6 +4,6 @@ import './index.css';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <h1 className='bg-amber-400 text-6xl'>Hello World</h1>
-  </StrictMode>
+    <h1 className="bg-amber-400 text-6xl">Hello World</h1>
+  </StrictMode>,
 );

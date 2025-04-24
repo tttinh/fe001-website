@@ -1,7 +1,19 @@
 @import 'tailwindcss';
-@import "tw-animate-css";
+@import 'tw-animate-css';
 
 @custom-variant dark (&:is(.dark *));
+
+@utility container-auto {
+  @apply container mx-auto border border-amber-500 px-4;
+}
+
+@utility flex-center {
+  @apply flex items-center justify-center;
+}
+
+@utility flex-between {
+  @apply flex items-center justify-between;
+}
 
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);

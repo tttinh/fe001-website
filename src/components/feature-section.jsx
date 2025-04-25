@@ -1,5 +1,5 @@
 const FeatureSection = () => {
-  return <div className="container-auto">Feature</div>;
+  return <div className="container">Feature</div>;
 };
 
 export default FeatureSection;

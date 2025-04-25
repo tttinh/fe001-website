@@ -1,5 +1,5 @@
 const PurposeSection = () => {
-  return <div className="container-auto">Purpose</div>;
+  return <div className="container">Purpose</div>;
 };
 
 export default PurposeSection;

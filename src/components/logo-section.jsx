@@ -1,5 +1,5 @@
 const LogoSection = () => {
-  return <div className="container-auto">Logos</div>;
+  return <div className="container">Logos</div>;
 };
 
 export default LogoSection;

@@ -1,19 +1,19 @@
-import FeatureSection from './components/ui/feature-section';
-import Footer from './components/ui/footer';
-import Header from './components/ui/header';
-import HeroSection from './components/ui/hero-section';
-import LogoSection from './components/ui/logo-section';
-import MonitorSection from './components/ui/monitor-section';
-import NewsletterSection from './components/ui/newsletter-section';
-import PricingSection from './components/ui/pricing-section';
-import PurposeSection from './components/ui/purpose-section';
-import ScheduleSection from './components/ui/schedule-section';
-import ServiceSection from './components/ui/service-section';
-import TestimonialSection from './components/ui/testimonial-section';
+import FeatureSection from './components/feature-section';
+import Footer from './components/footer';
+import Header from './components/header';
+import HeroSection from './components/hero-section';
+import LogoSection from './components/logo-section';
+import MonitorSection from './components/monitor-section';
+import NewsletterSection from './components/newsletter-section';
+import PricingSection from './components/pricing-section';
+import PurposeSection from './components/purpose-section';
+import ScheduleSection from './components/schedule-section';
+import ServiceSection from './components/service-section';
+import TestimonialSection from './components/testimonial-section';
 
 const App = () => {
   return (
-    <main className="min-h-screen overflow-x-hidden">
+    <main className="flex min-h-screen flex-col">
       <Header />
       <HeroSection />
       <LogoSection />

@@ -1,5 +1,5 @@
 const PricingSection = () => {
-  return <div className="container-auto">Pricing</div>;
+  return <div className="container">Pricing</div>;
 };
 
 export default PricingSection;

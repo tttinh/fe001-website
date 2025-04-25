@@ -1,5 +1,5 @@
 const NewsletterSection = () => {
-  return <div className="container-auto">Newsletter</div>;
+  return <div className="container">Newsletter</div>;
 };
 
 export default NewsletterSection;

@@ -1,5 +1,5 @@
 const ServiceSection = () => {
-  return <div className="container-auto">Services</div>;
+  return <div className="container">Services</div>;
 };
 
 export default ServiceSection;

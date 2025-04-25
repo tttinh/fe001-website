@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from './ui/button';
 import Container from './ui/container';
+import { cn } from '@/lib/utils';
 
 const links = [
   { href: '#home', label: 'Home' },
@@ -37,7 +38,16 @@ const Header = () => {
             <a
               key={index}
               href={link.href}
-              className={`relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-blue-600 after:transition-all hover:after:w-full ${link.href === activeLink ? 'text-blue-600 after:w-full' : 'text-gray-600 hover:text-gray-900'}`}
+              className={cn(
+                'relative after:absolute after:bottom-0 after:left-0',
+                'after:h-0.5 after:w-0 after:bg-blue-600',
+                'after:transition-all hover:after:w-full',
+                `${
+                  link.href === activeLink
+                    ? 'text-blue-600 after:w-full'
+                    : 'text-gray-600 hover:text-gray-900'
+                }`,
+              )}
               onClick={() => setActiveLink(link.href)}
             >
               {link.label}

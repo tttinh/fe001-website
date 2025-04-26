@@ -23,7 +23,7 @@ const features = [
 
 const FeatureSection = () => {
   return (
-    <section className="flex flex-col items-center gap-16 py-16">
+    <section className="container-center flex flex-col items-center gap-8 py-16">
       <div className="space-y-4 text-center">
         <h2 className="text-3xl font-bold">How can we help your business?</h2>
         <p className="text-gray-600">
@@ -31,7 +31,7 @@ const FeatureSection = () => {
         </p>
       </div>
 
-      <div className="grid max-w-7xl gap-16 md:grid-cols-3">
+      <div className="grid gap-4 md:grid-cols-3">
         {features.map((feature, index) => (
           <div
             key={index}

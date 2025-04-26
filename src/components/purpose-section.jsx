@@ -1,7 +1,7 @@
 const PurposeSection = () => {
   return (
-    <section className="bg-gray-50 px-4 py-16 md:px-8">
-      <div className="mx-auto grid max-w-6xl gap-8 md:grid-cols-3">
+    <section className="bg-gray-50 py-16">
+      <div className="container-center grid gap-8 md:grid-cols-3">
         <div className="flex flex-col gap-2">
           <p className="text-sm text-purple-600 uppercase">Achieve more</p>
           <h2 className="text-3xl font-bold md:w-4/5 md:text-4xl">

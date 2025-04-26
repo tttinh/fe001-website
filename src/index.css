@@ -11,6 +11,10 @@
   @apply flex items-center justify-between;
 }
 
+@utility container-center {
+  @apply container mx-auto px-4;
+}
+
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);

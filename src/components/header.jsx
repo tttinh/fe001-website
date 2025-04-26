@@ -1,8 +1,6 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from './ui/button';
-import Container from './ui/container';
-import { cn } from '@/lib/utils';
 
 const links = [
   { href: '#home', label: 'Home' },
@@ -17,7 +15,7 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 right-0 left-0 z-50 border-b border-gray-100 bg-white/90 shadow-sm backdrop-blur-sm">
-      <Container className="flex-between h-16 text-sm">
+      <section className="flex-between container-center h-16">
         <div className="flex-center cursor-pointer gap-1">
           <div className="h-4 w-4 rounded-full bg-blue-500 opacity-75 transition-opacity hover:opacity-100"></div>
           <div className="-ml-2 h-4 w-4 rounded-full bg-red-500 opacity-75 transition-opacity hover:opacity-100"></div>
@@ -38,16 +36,11 @@ const Header = () => {
             <a
               key={index}
               href={link.href}
-              className={cn(
-                'relative after:absolute after:bottom-0 after:left-0',
-                'after:h-0.5 after:w-0 after:bg-blue-600',
-                'after:transition-all hover:after:w-full',
-                `${
-                  link.href === activeLink
-                    ? 'text-blue-600 after:w-full'
-                    : 'text-gray-600 hover:text-gray-900'
-                }`,
-              )}
+              className={`relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-blue-600 after:transition-all hover:after:w-full ${
+                link.href === activeLink
+                  ? 'text-blue-600 after:w-full'
+                  : 'text-gray-600 hover:text-gray-900'
+              }`}
               onClick={() => setActiveLink(link.href)}
             >
               {link.label}
@@ -55,10 +48,10 @@ const Header = () => {
           ))}
         </nav>
         <Button className={'hidden px-6 md:block'}>Get in touch</Button>
-      </Container>
+      </section>
 
       {isMenuOpen && (
-        <Container className="text-sm md:hidden">
+        <section className="container-center md:hidden">
           <nav className="flex w-full flex-col gap-2 py-4">
             {links.map((link, index) => (
               <a
@@ -76,7 +69,7 @@ const Header = () => {
 
             <Button>Get in touch</Button>
           </nav>
-        </Container>
+        </section>
       )}
     </header>
   );

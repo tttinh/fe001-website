@@ -8,3 +8,4 @@ Follow the instruction of this [video](git@github.com:tttinh/fe-website-001.git)
 
 - Adding a slider in the pricing section.
 - Adding frame motion.
+- Implement carousel.

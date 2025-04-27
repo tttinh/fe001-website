@@ -58,7 +58,7 @@ const ServiceSection = () => {
         <Button className="w-fit px-8 py-6 text-base">Get started</Button>
       </div>
 
-      <div className="grid gap-8 md:w-1/2 md:grid-cols-2">
+      <div className="grid gap-4 md:w-1/2 md:grid-cols-2">
         {services.map((service, index) => (
           <div
             key={index}

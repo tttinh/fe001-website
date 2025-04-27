@@ -23,7 +23,7 @@ const features = [
 
 const FeatureSection = () => {
   return (
-    <section className="container-center flex flex-col items-center gap-8 py-16">
+    <section className="container-center flex flex-col items-center gap-8 py-16 md:py-24">
       <div className="space-y-4 text-center">
         <h2 className="text-3xl font-bold">How can we help your business?</h2>
         <p className="text-gray-600">

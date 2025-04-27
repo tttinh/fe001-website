@@ -1,7 +1,7 @@
 import scheduleImg from '../assets/stats.webp';
 const ScheduleSection = () => {
   return (
-    <section className="container-center flex-between flex-col gap-12 py-16 md:flex-row md:gap-24">
+    <section className="container-center flex-between flex-col gap-12 py-16 md:flex-row md:gap-24 md:py-24">
       <div className="w-full md:w-1/2">
         <img className="h-auto w-full" src={scheduleImg} alt="stats image" />
       </div>

@@ -1,6 +1,6 @@
 const PurposeSection = () => {
   return (
-    <section className="bg-gray-50 py-16">
+    <section className="bg-gray-50 py-16 md:py-24">
       <div className="container-center grid gap-8 md:grid-cols-3">
         <div className="flex flex-col gap-2">
           <p className="text-sm text-purple-600 uppercase">Achieve more</p>

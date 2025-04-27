@@ -2,7 +2,7 @@ import { Button } from './ui/button';
 
 const PricingSection = () => {
   return (
-    <section className="container-center flex-center flex-col gap-4 py-16">
+    <section className="container-center flex-center flex-col gap-4 py-16 md:py-24">
       <h2 className="text-3xl font-bold md:text-4xl">Pricing</h2>
       <div className="flex-center w-full flex-col gap-12 py-12 md:flex-row">
         <div className="w-max-md h-40 w-full space-y-4 rounded-md p-6 shadow-xl">
@@ -17,7 +17,7 @@ const PricingSection = () => {
       </div>
 
       <p className="text-xl text-gray-600">Ready to get started?</p>
-      <Button className="px-6 py-6 text-base">Get Started</Button>
+      <Button className="w-fit px-8 py-6 text-base">Get started</Button>
     </section>
   );
 };

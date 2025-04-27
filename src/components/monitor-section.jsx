@@ -2,7 +2,7 @@ import monitorImg from '../assets/monitor-card.webp';
 
 const MonitorSection = () => {
   return (
-    <section className="container-center flex-between flex-col gap-12 py-16 md:flex-row md:gap-24">
+    <section className="container-center flex-between flex-col gap-12 py-16 md:flex-row md:gap-24 md:py-24">
       <div className="flex w-full flex-col gap-6 md:w-1/2">
         <p className="font-semibold text-emerald-500 uppercase">Monitor</p>
         <h2 className="text-3xl font-bold md:text-4xl">

@@ -8,7 +8,7 @@ const logos = [slack, amazon, woocommerce, meundies, sitepoint];
 
 const LogoSection = () => {
   return (
-    <section className="container-center py-16">
+    <section className="container-center py-16 md:py-24">
       <div className="flex w-full flex-col items-start gap-6 overflow-hidden sm:flex-row sm:items-center">
         {/* text */}
         <div className="z-10 w-xs shrink-0 border-l-4 border-blue-400 bg-white px-6 py-2 text-xl font-semibold text-gray-600 sm:text-base">

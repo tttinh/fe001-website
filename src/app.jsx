@@ -13,7 +13,9 @@ import TestimonialSection from './components/testimonial-section';
 
 const App = () => {
   return (
-    <main className="flex min-h-screen flex-col">
+    <main className="relative min-h-screen overflow-x-hidden">
+      <div className="absolute -top-28 -left-28 -z-10 h-[500px] w-[500px] rounded-full bg-gradient-to-tr from-indigo-500/20 to-pink-500/20 blur-[80px]"></div>
+
       <Header />
       <HeroSection />
       <LogoSection />
